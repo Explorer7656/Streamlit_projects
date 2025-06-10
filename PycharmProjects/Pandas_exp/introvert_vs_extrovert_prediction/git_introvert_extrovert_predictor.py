@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle as plk
-import sklearn
+
 from sklearn.pipeline import Pipeline
 
 df=pd.read_csv(r'personality_dataset.csv')
