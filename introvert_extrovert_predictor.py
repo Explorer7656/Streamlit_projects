@@ -4,10 +4,10 @@ import pickle as plk
 import sklearn
 from sklearn.pipeline import Pipeline
 
-df=pd.read_csv(r'C:\Users\HP\PycharmProjects\Pandas_exp\introvert_vs_extrovert_prediction\personality_dataset.csv')
+df=pd.read_csv(r'personality_dataset.csv')
 # st.title('Are you an introvert or extrovert?')
 # st.header('This is not a questionare, it is powered by a machine-learning regression model.')
-with open(r'C:\Users\HP\PycharmProjects\Pandas_exp\introvert_vs_extrovert_prediction\introvert_extrovert.pkl', 'rb') as file:
+with open(r'introvert_extrovert.pkl', 'rb') as file:
     model=plk.load(file)
 print(df.columns.tolist())
 print(df['Time_spent_Alone'].value_counts())
